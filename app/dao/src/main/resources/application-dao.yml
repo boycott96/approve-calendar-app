@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: approve_calendar
+    url: jdbc:mysql://47.98.119.241:3306/approve_calendar?useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: qwer
+    password: qwer7755
+mybatis:
+  mapper-locations: classpath*:sqlmap/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: 'null'
